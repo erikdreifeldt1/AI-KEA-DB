@@ -8,9 +8,9 @@ CREATE TABLE Models (
 series VARCHAR(50) NOT NULL,
 model VARCHAR(50) NOT NULL, 
 price INT NOT NULL,
-width INT NOT NULL,
-depth INT NOT NULL,
-height INT NOT NULL,
+width NUMERIC NOT NULL,
+depth NUMERIC NOT NULL,
+height NUMERIC NOT NULL,
 weight NUMERIC NOT NULL,
 PRIMARY KEY (series, model)
 );
@@ -24,7 +24,7 @@ CREATE TABLE Products (
 id INT PRIMARY KEY,  /* xxx.xxx.xx  where x are ints*/
 series VARCHAR(50) NOT NULL,
 model VARCHAR(50) NOT NULL, 
-link VARCHAR(50) NOT NULL,
+url VARCHAR(200) NOT NULL,
 furniture_type VARCHAR(50) NOT NULL REFERENCES Category(furniture),
 FOREIGN KEY (series, model) REFERENCES Models(series, model)
 );

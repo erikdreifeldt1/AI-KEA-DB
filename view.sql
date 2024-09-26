@@ -19,5 +19,24 @@ JOIN
 JOIN 
     Colour ON Products.id = Colour.product_id;
 
+CREATE VIEW MainCategoryProducts AS
+SELECT 
+    Products.id,
+    Models.series,
+    Models.model,
+    (Models.price + Colour.price) AS totalprice,
+    Colour.colour_name,
+    Products.url
+FROM 
+    Products
+JOIN 
+    Models ON Products.series = Models.series AND Products.model = Models.model
+JOIN 
+    Colour ON Products.id = Colour.product_id
+WHERE 
+    Colour.colour_category IN ('brown');
+
 SELECT * FROM ProductDetails;
+
+SELECT * FROM MainCategoryProducts;
 

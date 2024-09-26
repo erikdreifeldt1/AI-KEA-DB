@@ -6,10 +6,9 @@ DELETE FROM Colour;
 INSERT INTO Category (furniture, area) VALUES ('Sofas', 'living room');
 INSERT INTO Category (furniture, area) VALUES ('Armchairs/Chaise longues', 'living room');
 INSERT INTO Category (furniture, area) VALUES ('Coffee and side tables', 'living room');
-INSERT INTO Category (furniture, area) VALUES ('Storage and orginasition', 'living room');
+INSERT INTO Category (furniture, area) VALUES ('Storage and organisation', 'living room');
 INSERT INTO Category (furniture, area) VALUES ('Rugs', 'living room');
 INSERT INTO Category (furniture, area) VALUES ('Decoration', 'living room');
-INSERT INTO Category (furniture, area) VALUES ('Armchairs/Chaise longues', 'living room');
 INSERT INTO Category (furniture, area) VALUES ('TV and media furniture', 'living room');
 INSERT INTO Category (furniture, area) VALUES ('Lighting', 'living room');
 INSERT INTO Category (furniture, area) VALUES ('Curtain and blinds', 'living room');
@@ -51,7 +50,7 @@ INSERT INTO Models (series, model, price, width, depth, height, weight) VALUES (
 INSERT INTO Models (series, model, price, width, depth, height, weight) VALUES ('Svartsenap', 'Table-runner', 39, 130, 35, 0.1, 0.2);
 INSERT INTO Models (series, model, price, width, depth, height, weight) VALUES ('Skansnäs', 'Extendable table', 7495, 170, 115, 75, 47.04);
 INSERT INTO Models (series, model, price, width, depth, height, weight) VALUES ('Skogsta', 'Dining table', 7495, 235, 100, 73, 84);
-INSERT INTO Models (series, model, price, width, depth, height, weight) VALUES ('Lisabo', 'Table' 1795, 88, 78, 74, 17.7);
+INSERT INTO Models (series, model, price, width, depth, height, weight) VALUES ('Lisabo', 'Table', 1795, 88, 78, 74, 17.7);
 
 
 
@@ -63,10 +62,9 @@ INSERT INTO Products (id, series, model, url, furniture_type) VALUES (70239710, 
 INSERT INTO Products (id, series, model, url, furniture_type) VALUES (40541421, 'Holmerud', 'Side table', 'https://www.ikea.com/se/en/p/holmerud-side-table-oak-effect-40541421/', 'Coffee and side tables');
 INSERT INTO Products (id, series, model, url, furniture_type) VALUES (50562248, 'Listerby', 'Console table', 'https://www.ikea.com/se/en/p/listerby-console-table-dark-brown-beech-veneer-50562248/', 'Coffee and side tables');
 INSERT INTO Products (id, series, model, url, furniture_type) VALUES (10239713, 'Stockholm', 'Nest of tables, set of 2', 'https://www.ikea.com/se/en/p/stockholm-nest-of-tables-set-of-2-walnut-veneer-10239713/', 'Coffee and side tables');
-INSERT INTO Products (id, series, model, url, furniture_type) VALUES (20333951, 'Eket', 'Cabinet with 2 door and 1 shelf', 'https://www.ikea.com/se/en/p/eket-cabinet-w-2-doors-and-1-shelf-white-20333951/', 'Storage and orginasition');
-INSERT INTO Products (id, series, model, url, furniture_type) VALUES (20344921, 'Eket', 'Cabinet with 2 door and 1 shelf', 'https://www.ikea.com/se/en/p/eket-cabinet-w-2-doors-and-1-shelf-grey-20344921/', 'Storage and orginasition');
-INSERT INTO Products (id, series, model, url, furniture_type) VALUES (80437234, 'Kleppstad', 'Wardrobe with 2 doors', 'https://www.ikea.com/se/en/p/kleppstad-wardrobe-with-2-doors-white-80437234/', 'Storage and orginasition');
-INSERT INTO Products (id, series, model, url, furniture_type) VALUES (90333976, 'Råskog', 'Trolley', 'https://www.ikea.com/se/en/p/raskog-trolley-black-90333976/', 'Storage and orginasition');
+INSERT INTO Products (id, series, model, url, furniture_type) VALUES (20333951, 'Eket', 'Cabinet with 2 doors and 1 shelf', 'https://www.ikea.com/se/en/p/eket-cabinet-w-2-doors-and-1-shelf-white-20333951/', 'Storage and organisation');
+INSERT INTO Products (id, series, model, url, furniture_type) VALUES (80437234, 'Kleppstad', 'Wardrobe with 2 doors', 'https://www.ikea.com/se/en/p/kleppstad-wardrobe-with-2-doors-white-80437234/', 'Storage and organisation');
+INSERT INTO Products (id, series, model, url, furniture_type) VALUES (90333976, 'Råskog', 'Trolley', 'https://www.ikea.com/se/en/p/raskog-trolley-black-90333976/', 'Storage and organisation');
 INSERT INTO Products (id, series, model, url, furniture_type) VALUES (20426808, 'Stoense', 'Rug, low pile', 'https://www.ikea.com/se/en/p/stoense-rug-low-pile-off-white-20426808/', 'Rugs');
 INSERT INTO Products (id, series, model, url, furniture_type) VALUES (20470919, 'Rangstrup', 'Rug, flatwoven', 'https://www.ikea.com/se/en/p/rangstrup-rug-flatwoven-handmade-cotton-assorted-colours-20470919/', 'Rugs');
 INSERT INTO Products (id, series, model, url, furniture_type) VALUES (70356822, 'Storabo', 'Rug', 'https://www.ikea.com/se/en/p/storabo-rug-green-70356822/', 'Rugs');   
@@ -94,14 +92,13 @@ INSERT INTO Products (id, series, model, url, furniture_type) VALUES (40563776, 
 
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (59517150, 'white', 'Blekinge white', 0);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (29507156, 'white', 'Blekinge white', 0);
-INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (49440597, 'gray', 'Tibbleby beige/grey', 0);
+INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (49440597, 'grey', 'Tibbleby beige/grey', 0);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (99484777, 'beige', 'Tallmyra beige', 2200);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (70239710, 'brown', 'Walnut veneer', 0);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (40541421, 'brown', 'Oak effect', 0);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (50562248, 'brown', 'Dark brown beech veneer', 0);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (10239713, 'brown', 'Walnut veneer', 0);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (20333951, 'white', 'White', 0);
-INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (20344921, 'gray', 'Grey', 0);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (80437234, 'white', 'White', 0);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (90333976, 'black', 'Black', 0);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (20426808, 'white', 'Off-white', 0);
@@ -113,8 +110,8 @@ INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (705
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (00503671, 'black', 'Gunnared black/grey', 200);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (60555153, 'green', 'Kelinge green', 0);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (70562087, 'white', 'White', 0);
-INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (39534817, 'gray', 'Grey-beige', 0);
-INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (90520869, 'gray', 'Light grey', 0);
+INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (39534817, 'grey', 'Grey-beige', 0);
+INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (90520869, 'grey', 'Light grey', 0);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (80096372, 'white', 'White', 0);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (60575919, 'white', 'White/dark grey', 0);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (00541526, 'white', 'Beech/white', 0);
@@ -123,7 +120,7 @@ INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (505
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (20112011, 'white', 'Off-white', 0);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (20506145, 'assorted', 'Market stall pattern', 0);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (40082536, 'brown', 'Water hyacinth', 0);
-INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (10533069, 'gray', 'Grey', 0);
+INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (10533069, 'grey', 'Grey', 0);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (70563237, 'brown', 'Brown beech/veneer', 0);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (70419265, 'brown', 'Acacia/black', 0);
 INSERT INTO Colour (product_id, colour_category, colour_name, price) VALUES (40563776, 'brown', 'Ash veneer', 0);

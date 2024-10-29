@@ -8,9 +8,7 @@ CREATE TABLE Models (
 series VARCHAR(50) NOT NULL,
 model VARCHAR(50) NOT NULL, 
 price INT NOT NULL,
-width NUMERIC NOT NULL,
-depth NUMERIC NOT NULL,
-height NUMERIC NOT NULL,
+measurements VARCHAR(400) NOT NULL,
 weight NUMERIC NOT NULL,
 PRIMARY KEY (series, model)
 );
